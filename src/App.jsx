@@ -471,9 +471,7 @@ const App = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <section
-            className={`${activeTab !== "backlog" && "hidden"}`}
-          >
+          <section className={`${activeTab !== "backlog" && "hidden"}`}>
             <div className="space-y-6">
               <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-6">
                 <h2 className="font-bold text-slate-800 flex items-center gap-2 text-left mb-6">
@@ -571,9 +569,7 @@ const App = () => {
             </div>
           </section>
 
-          <section
-            className={`${activeTab !== "planner" && "hidden"}`}
-          >
+          <section className={`${activeTab !== "planner" && "hidden"}`}>
             <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden min-h-[600px] flex flex-col">
               <div className="bg-slate-50 p-4 flex gap-2 overflow-x-auto border-b border-slate-100 scroll-hide">
                 {daysOfWeek.map((day) => (
