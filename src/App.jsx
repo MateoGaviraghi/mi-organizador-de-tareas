@@ -470,9 +470,9 @@ const App = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="max-w-3xl mx-auto">
           <section
-            className={`lg:col-span-6 ${activeTab !== "backlog" && "hidden"}`}
+            className={`${activeTab !== "backlog" && "hidden"}`}
           >
             <div className="space-y-6">
               <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-6">
@@ -572,7 +572,7 @@ const App = () => {
           </section>
 
           <section
-            className={`lg:col-span-6 ${activeTab !== "planner" && "hidden"}`}
+            className={`${activeTab !== "planner" && "hidden"}`}
           >
             <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden min-h-[600px] flex flex-col">
               <div className="bg-slate-50 p-4 flex gap-2 overflow-x-auto border-b border-slate-100 scroll-hide">

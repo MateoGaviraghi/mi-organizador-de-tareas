@@ -1,0 +1,31 @@
+[debug] [2026-03-02T21:19:57.893Z] ----------------------------------------------------------------------
+[debug] [2026-03-02T21:19:57.895Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mateo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-03-02T21:19:57.895Z] CLI Version:   15.8.0
+[debug] [2026-03-02T21:19:57.895Z] Platform:      win32
+[debug] [2026-03-02T21:19:57.895Z] Node Version:  v22.16.0
+[debug] [2026-03-02T21:19:57.895Z] Time:          Mon Mar 02 2026 18:19:57 GMT-0300 (hora estándar de Argentina)
+[debug] [2026-03-02T21:19:57.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-02T21:19:58.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-02T21:19:58.940Z] > authorizing via signed-in user (mateogaviraghi24@gmail.com)
+[debug] [2026-03-02T21:19:58.940Z] [iam] checking project mi-organizador-tareas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-02T21:19:58.941Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:19:58.941Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:19:58.942Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mi-organizador-tareas:testIamPermissions [none]
+[debug] [2026-03-02T21:19:58.942Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mi-organizador-tareas:testIamPermissions  x-goog-user-project=mi-organizador-tareas
+[debug] [2026-03-02T21:19:58.942Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mi-organizador-tareas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-02T21:19:59.846Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mi-organizador-tareas:testIamPermissions 200
+[debug] [2026-03-02T21:19:59.846Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mi-organizador-tareas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-02T21:19:59.847Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:19:59.847Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:19:59.847Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mi-organizador-tareas [none]
+[debug] [2026-03-02T21:20:00.238Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mi-organizador-tareas 200
+[debug] [2026-03-02T21:20:00.238Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mi-organizador-tareas {"projectId":"mi-organizador-tareas","projectNumber":"685781898811","displayName":"mi-organizador-tareas","name":"projects/mi-organizador-tareas","resources":{"hostingSite":"mi-organizador-tareas"},"state":"ACTIVE","etag":"1_667ff8ea-7a4d-46a9-bcdf-d7aaf8509f0e"}
+[info] 
+[info] === Deploying to 'mi-organizador-tareas'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-02T21:20:00.242Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:20:00.242Z] Checked if tokens are valid: true, expires at: 1772489648151
+[debug] [2026-03-02T21:20:00.242Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mi-organizador-tareas/versions [none]
+[debug] [2026-03-02T21:20:00.242Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mi-organizador-tareas/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
